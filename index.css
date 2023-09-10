@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vh;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.cover {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 1275px;
+    height: 800px;
+
+}
+
+
+
+.black-cover {
+    display: flex;
+    background-color: #151515;
+    width: 450px;
+    height: 799px;
+    flex-shrink: 0;
+}
+
+.photo-cover {
+    display: flex;
+    width: 540px;
+    height: 800px;
+    flex-shrink: 0;
+}
+
+.black-cover h1 {
+    position: absolute;
+    top: 130px;
+    left: 165px;
+    color: white;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 88px;
+    text-transform: uppercase;
+    mix-blend-mode: difference;
+}
+
+.photo-cover p {
+    position: absolute;
+    top: 190px;
+    left: 925px;
+    width: 350px;
+    height: 160px;
+    color:  #444;
+    line-height: 32px;
+    font-family: 'Outfit', 'sans-serif';
+    font-size: 22px;
+    font-weight: 300;
+    text-align: left;
+
+}
+
+.button {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 204px;
+    height: 72px;
+    cursor: pointer;
+
+}
+
+button {
+    position: absolute;
+    top: 414px;
+    left: 929px;
+    width: 204px;
+    height: 72px;
+    background-color: #151515;
+    color: #FFF;
+    font-family: Big Shoulders Display;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 3.636px;
+    border: none;
+    
+}
+
+span {
+    position: absolute;
+    top: 414px;
+    left: 1129px;
+    height: 72px;
+    background-color: #D5966C;
+    width: 56px;
+    height: 72px;
+    color: #FFF;
+    overflow: hidden;
+
+}
+
+.button:hover button {
+    cursor: pointer;
+    background-color: #D5966C;
+}
+
+
+.button:hover span {
+    cursor: pointer;
+}
+
+.normal-img {
+    opacity: 1;
+}
+
+.hovered-img {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.button:hover .normal-img {
+    opacity: 0;
+}
+
+.button:hover .hovered-img {
+    opacity: 1;
+}
+/*Cover Ended here*/
+
+
+/*GRID CONTAINER*/
+
+.grid-container {
+    margin-top: 180px;
+    display: grid;
+    width: 1109px;
+    margin-left: 140px;
+    margin-right: 165px;
+}
+
+.grid-row-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.text-1 {
+    display: grid;
+    margin-right: 125px;
+    width: 350px;
+    line-height: 60px;
+    height: 280px;
+}
+
+.text-1 h2 {
+    height: 120px;
+    width: 350px;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+.text-1 p {
+    height: 128px;
+    width: 350px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+.hall-img img{
+    display: grid;
+    width: 635px;
+    height: 400px;
+    margin-bottom: 30px;
+    
+
+}
+
+.grid-row-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 635px;
+    height: 720px;
+    margin-bottom: 90px;
+}
+
+.bench-img img{
+    margin-right: 30px;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    width: 635px;
+    height: 720px;
+    
+}
+
+.grid-column {
+    display: grid;
+    grid-template-columns: 445px;
+    grid-template-rows: 313px 30px 377px;
+    
+}
+
+.gallery-img img{
+    grid-row: 1/2;
+    width: 445px;
+    height: 313px;
+    
+}
+
+.text-2 {
+    grid-row: 3/4;
+    padding-left: 48px;
+    padding-right: 47px;
+    width: 445px;
+    height: 377px;
+    background: #151515;
+    color: white;
+
+}
+
+.text-2 h2 {
+    height: 120px;
+    width: 350px;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+.text-2 p{
+    width: 350px;
+    height: 96px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+.contacts {
+    background-color: #151515;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 244px;
+    
+}
+
+
+.contacts svg{
+    height: 58px;
+    width: 160px;
+}
+
+.contacts p{
+    color: #FFF;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1em;
+    line-height: 1.6em;
+    height: 84px;
+    width: 430px;
+    
+}
+
+.icons {
+    margin-bottom: 20px;
+    width: 100px;
+    
+}
+
+.icons svg {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.icons svg:hover {
+    color: #D5966C;
+}

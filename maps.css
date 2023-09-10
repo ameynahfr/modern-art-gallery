@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.map {
+    margin: 0, auto;
+    width: 1440.901px;
+    height: 685px;
+    background-color: #151515;
+}
+
+#location {
+    background: lightgray 0px 0px / 100% 100% no-repeat;
+    background-color: lightgray;
+}
+
+#locator {
+    position: absolute;
+    top: 259px;
+    left: 687px;
+}
+
+
+.button {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 204px;
+    height: 72px;
+    cursor: pointer;
+
+}
+
+button {
+    position: absolute;
+    top: 0px;
+    left: 212px;
+    width: 204px;
+    height: 72px;
+    background-color: #151515;
+    color: #FFF;
+    font-family: Big Shoulders Display;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 3.636px;
+    border: none;
+    
+}
+
+span {
+    position: absolute;
+    top: 0px;
+    left: 156px;
+    height: 72px;
+    background-color: #D5966C;
+    width: 56px;
+    height: 72px;
+    color: #FFF;
+    overflow: hidden;
+
+}
+
+.button:hover button {
+    cursor: pointer;
+    background-color: #D5966C;
+}
+
+
+.button:hover span {
+    cursor: pointer;
+}
+
+.normal-img {
+    opacity: 1;
+}
+
+.hovered-img {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.button:hover .normal-img {
+    opacity: 0;
+}
+
+.button:hover .hovered-img {
+    opacity: 1;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 1440px;
+    height: 548px;
+    padding-top: 104px;
+    padding-left: 145px;
+    padding-right: 165px;
+    background-color: #151515;
+}
+
+.content h1 {
+    width: 350px;
+    color: #FFF;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 70px;
+    font-weight: 900;
+    line-height: 70px;
+    text-transform: uppercase;
+}
+
+.text {
+    margin-left: 160px;
+}
+
+.text h2{
+    width: 350px;
+    color: #D5966C;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 36px; 
+    text-transform: uppercase;
+}
+
+.text #p1 {
+    width: 445px;
+    color: #FFF;
+    font-family: 'Outfit', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+
+
+.text #p2 {
+    width: 540px;
+    color: #FFF;
+    font-family: 'Outfit', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 32px;
+}
+.contacts {
+    background-color: #D5966C;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 244px;
+}
+
+
+
+
+.contacts svg{
+    height: 58px;
+    width: 160px;
+}
+
+.contacts p{
+    color: #151515;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1em;
+    line-height: 1.6em;
+    height: 84px;
+    width: 430px;
+    
+}
+
+.icons {
+    margin-bottom: 20px;
+    width: 100px;
+    
+}
+
+.icons svg {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.icons svg:hover {
+    fill: #FFF;
+}
